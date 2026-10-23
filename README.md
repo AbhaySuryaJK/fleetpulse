@@ -6,7 +6,7 @@ FleetPulse is a low-cost IoT system that monitors battery voltage, temperature, 
 
 | 🟢 Healthy | 🔴 Critical |
 |---|---|
-| ![Healthy node](docs/images/healthy.jpg) | ![Critical node](docs/images/critical.jpg) |
+| ![Healthy node](healthy.jpg) | ![Critical node](critical.jpg) |
 | 22 °C · 10.5 V · no vibration | 60.2 °C overheating + 9.0 V drained battery |
 
 ## How it works
@@ -27,13 +27,13 @@ FleetPulse is a low-cost IoT system that monitors battery voltage, temperature, 
 2. Paste `main.py` and `diagram.json` from this repo into the matching tabs
 3. Press ▶ Play, then click the sensors or turn the knob to trigger faults
 
-## Repo structure
-```
-main.py          # Sensor node firmware (MicroPython, ESP32)
-diagram.json     # Wokwi circuit: ESP32 + DS18B20 + MPU6050 + potentiometer
-docs/PRD.md      # Product requirements, KPIs, 12-week plan, risk register
-docs/status.md   # Weekly status updates
-```
+## Project files
+| File | What it is |
+|---|---|
+| [main.py](main.py) | Sensor node firmware (MicroPython, ESP32) |
+| [diagram.json](diagram.json) | Wokwi circuit: ESP32 + DS18B20 + MPU6050 + potentiometer |
+| [PRD.md](PRD.md) | Product requirements, KPIs, 12-week plan, risk register |
+| [status.md](status.md) | Weekly status updates |
 
 ## Tech stack
 ESP32 · MicroPython · Wokwi simulator · *(coming: MQTT, Python, scikit-learn, Streamlit)*
